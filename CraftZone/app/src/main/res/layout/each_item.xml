@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_12sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView123"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/title123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            tools:ignore="TextSizeCheck,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/price123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            tools:ignore="TextSizeCheck,VisualLintBounds" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_10ssp"
+            android:id="@+id/description123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descrption"
+            android:textSize="@dimen/_20sdp"
+            tools:ignore="TextSizeCheck,VisualLintBounds" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

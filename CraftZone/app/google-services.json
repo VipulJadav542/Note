@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "711378555299",
+    "project_id": "craft-zone-44eab",
+    "storage_bucket": "craft-zone-44eab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711378555299:android:b49cfa3632c00c760e4a16",
+        "android_client_info": {
+          "package_name": "com.example.craftzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711378555299-69hooqe1saj82o5835gijjqd9j8571u5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.craftzone",
+            "certificate_hash": "edb36e10002c201eadc3a5e978d7dd4c8596049f"
+          }
+        },
+        {
+          "client_id": "711378555299-fa24u3juvlvhfuu5p0kpcgsfm33g9t5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDctlPIXbkP-jYxPFaVf8dcKko0y-UMOaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711378555299-ec605n1uhetgei1m50so0s7lj81i08pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

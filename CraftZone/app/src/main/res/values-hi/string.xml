@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">CraftZone</string>
+    <string name="email">ईमेल</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="password">पासवर्ड</string>
+    <string name="registration">रजिस्ट्रेशन</string>
+    <string name="user_name">उपयोगकर्ता नाम</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="Register">रजिस्टर</string>
+    <string name="don_t_have_account">खाता नहीं है</string>
+    <string name="click_here">यहाँ क्लिक करें</string>
+    <string name="already_have_account">पहले से ही खाता है</string>
+    <string name="button">बटन</string>
+    <string name="welcome">स्वागत</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="start_app">ऐप शुरू करें</string>
+    <string name="log_in">लॉग इन करें</string>
+    <string name="last_name">उपनाम</string>
+    <string name="first_name">पहला नाम</string>
+    <string name="facebook">फेसबुक</string>
+    <string name="google">गूगल</string>
+    <string name="Continue">जारी रखना</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="cart">कार्ट</string>
+    <string name="home">होम</string>
+    <string name="search">सर्च</string>
+    <string name="or">या</string>
+    <string name="continue_with_google">गूगल के साथ जारी रखें</string>
+    <string name="enter_your_registerd_email">अपना रजिस्टर ईमेल दर्ज करें</string>
+    <string name="send_email">ईमेल भेजें</string>
+    <string name="forgot_password">पासवर्ड भूल गए</string>
+    <string name="hello_blank_fragment">हेलो ब्लैंक फ्रैगमेंट</string>
+    <string name="vipuljadav542_gmail_com">vipuljadav542@gmail.com</string>
+    <string name="descrption">डिस्क्रिप्शन*</string>
+    <string name="sofa">सोफ़ा</string>
+    <string name="mattress">मेट्रेस</string>
+    <string name="g_edit_profile">एडिट प्रोफाइल</string>
+    <string name="evolve_texture">इवोल्व टेक्सचर</string>
+    <string name="modular_kitchen">मॉड्यूलर किचन</string>
+    <string name="curtain_and_blind">कर्टेन और ब्लाइंड</string>
+    <string name="artificial_grass">आर्टिफिशियल ग्रास</string>
+    <string name="aristo_wardrobe">अरिस्टो वार्डरोब</string>
+    <string name="wooden_flooring">वुडन फ्लोरिंग</string>
+    <string name="open">खुला</string>
+    <string name="close">बंद</string>
+    <string name="about_as">हमारे बारे मे</string>
+    <string name="best_products">बेस्ट प्रोडक्ट्स</string>
+    <string name="todo">सभी</string>
+    <string name="title">टाइटल</string>
+    <string name="title_activity_home">होम</string>
+    <string name="navigation_drawer_open">नेविगेशन ड्रॉअर खोलें</string>
+    <string name="navigation_drawer_close">नेविगेशन ड्रॉअर बंद करें</string>
+    <string name="nav_header_title">एंड्रॉइड स्टूडियो</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">नेविगेशन हेडर</string>
+    <string name="action_settings">सेटिंग</string>
+
+    <string name="menu_home">होम</string>
+    <string name="menu_gallery">गैलरी</string>
+    <string name="menu_slideshow">स्लाइड शो</string>
+    <string name="texture">टेक्सचर</string>
+    <string name="wardrobe">वार्डरोब</string>
+    <string name="room_partition">रुम पार्टीशन</string>
+    <string name="genuine_leather">असली लेधर</string>
+    <string name="recliner">रिक्लाइनर</string>
+    <string name="upholstery_bed">अफॉल्स्टरी बेड</string>
+    <string name="chair">कुर्सी</string>
+    <string name="fabric">फैब्रिक</string>
+    <string name="sofa_cum_bed">सोफा विथ बेड</string>
+    <string name="curtain_blind">कर्टेन ब्लाइंड</string>
+    <string name="pvc_wooden_flooring"><![CDATA[PVC - Wooden Flooring]]></string>
+    <string name="itemname">आइटम नाम*</string>
+    <string name="details">डिटेल्स</string>
+    <string name="mattress_the_orthopedic_memory_foam_mattress_adapts_to_the_shape_of_the_sleeper_s_body_providing_uniform_support_throughout_it_distributes_the_weight_of_body_evenly_ensuring_no_blood_clots_or_restlessness">गद्दा: आर्थोपेडिक मेमोरी फोम गद्दा स्लीपर के शरीर के आकार के अनुकूल हो जाता है, जिससे पूरे शरीर को एक समान सहारा मिलता है। यह शरीर के वजन को समान रूप से वितरित करता है, जिससे रक्त का थक्का या बेचैनी नहीं होती है।</string>
+    <string name="payment">पेमेंट</string>
+    <string name="price">कीमत*</string>
+    <string name="all_orders">सभी ऑर्डर्स</string>
+    <string name="track_order">ट्रेक ऑर्डर</string>
+    <string name="billing_and_addressess">बिलिंग और पता</string>
+    <string name="languages">भाषा</string>
+    <string name="meswada_rajkot_360023">मेसवाड़ा, राजकोट 360023</string>
+    <string name="settings">सेटिंग</string>
+    <string name="personal_details">पर्सनल डिटेल्स</string>
+    <string name="orders">ऑर्डर्स</string>
+    <string name="notifications">सूचनाएं\n</string>
+    <string name="region">रीजनल</string>
+    <string name="language">भाषा\n</string>
+    <string name="help">मदद\n</string>
+    <string name="name">नाम</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="_1600">$1600</string>
+    <string name="get_product">प्रोडक्ट प्राप्त करें</string>
+    <string name="no_order_to_show">ऑर्डर नहीं है</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="hindi">हिंदी</string>
+    <string name="gujrati">गुजरती</string>
+    <string name="got_a_quastion_we_re_here_to_answer">कोई सवाल है? हम जवाब देने के लिए हैं!</string>
+    <string name="save">सेव</string>
+    <string name="address">पता</string>
+    <string name="phone">फ़ोन</string>
+    <string name="product">प्रोडक्ट</string>
+    <string name="premium_chair">प्रीमियम कुर्सी</string>
+    <string name="_1">1</string>
+    <string name="total">टोटल</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="payment_methods">पेमेंट मेथड</string>
+    <string name="payment_explanation">पेमेंट एक्सप्लेनेशन</string>
+    <string name="shipping">शिपिंग</string>
+    <string name="place_order">प्लेस ऑर्डर</string>
+    <string name="select_address_error">सिलेक्ट पता एरर</string>
+    <string name="address_location_of_home">घर का पता स्थान</string>
+    <string name="street">गली\n</string>
+    <string name="city">शहर\n</string>
+    <string name="state">राज्य</string>
+    <string name="delete">मिटाना</string>
+    <string name="see_products">प्रोडक्टस देखें</string>
+    <string name="scotch_premium">स्कॉच प्रीमियम</string>
+    <string name="_2000">$2000</string>
+    <string name="show_all">सब दिखाएं</string>
+    <string name="upload">अपलोड</string>
+    <string name="goto_payment">पेमेंट पर जाइए</string>
+    <string name="dolar">कीमत: $</string>
+    <string name="select_profile_image">प्रोफ़ाइल फोटो चुनें</string>
+    <string name="g_cant_change_email_message">ईमेल नहीं बदल सकता</string>
+    <string name="Go_to_Admin">एडमिन पर जाएँ\n</string>
+    <string name="click_here_to_choose_a_image">एक फोटो चुनने के लिए_यहां क्लिक करें</string>
+    <string name="special_products">विशेष प्रोडक्ट</string>
+    <string name="recently_updated">हाल ही में अपडेट</string>
+    <string name="update">अपडेट</string>
+    <string name="category">वर्ग</string>
+    <string name="title_activity_cart">कार्ट</string>
+    <string name="title_activity_add_to_cart">कार्ट में रखे</string>
+    <string name="default_web_client_id" translatable="false">711378555299-fa24u3juvlvhfuu5p0kpcgsfm33g9t5b.apps.googleusercontent.com</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें..</string>
+    <string name="delete_from_cart">कार्ट से हटाएँ</string>
+    <string name="no_prodect_added">कोई प्रोडक्ट नहीं है</string>
+    <string name="delete_product">डिलीट प्रोडक्ट</string>
+    <string name="exit">बाहर निकले</string>
+    <string name="share">शेयर</string>
+    <string name="feedback">फीडबैक</string>
+    <string name="message">संदेश</string>
+    <string name="send_feedback">फीडबैक भेजें</string>
+    <string name="subject">विषय</string>
+    <string name="estd_1986">ESTD - 1986</string>
+    <string name="shubham_sales"><![CDATA[SHUBHAM SALES]]></string>
+    <string name="craftzone">CraftZone</string>
+    <string name="search_products">आप यहां कोई भी प्रोडक्ट खोज सकते हैं</string>
+    <string name="not_found">नहीं मिला!!!</string>
+
+    <string-array name="products">
+        <item>चेयर</item>
+        <item>कर्टेन ब्लाइंड</item>
+        <item>जेनुइन लेधर</item>
+        <item>मैट्रेस</item>
+        <item>मॉड्यूलर किचन</item>
+        <item>पीवीसी वुडन फ्लोरिंग</item>
+        <item>रिक्लाइनर</item>
+        <item>रुम पार्टीशन</item>
+        <item>सोफ़ा</item>
+        <item>सोफा विथ बेड</item>
+        <item>टेक्सचर</item>
+        <item>कर्टेन ब्लाइंड</item>
+        <item>अफॉल्स्टरी बेड</item>
+        <item>वार्डरोब</item>
+    </string-array>
+</resources>

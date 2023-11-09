@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#171942"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:src="@drawable/image1"
+            android:background="@color/white"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:gravity="center"
+            android:text="Craftzone-Shubham Sales is a 3rd generation headed firm fountded by Jayesh Gajjar."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:gravity="center"
+            android:text="Jayesh Gajjar with his sons, Pritesh Gajjar and Prajit Gajjar builds trust and percept quality in the furniture and furnishing industry since 1986."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Sound customer base manifest the firm’s craftsmanship, know-how and transparency in the business."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Best-in-class product, service and value for money are the firm’s core value."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:gravity="center"
+            android:text="Please have a glance at our product portfolio :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20ssp"
+            android:text="* Modular Kitchen                * Mattress"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+        <TextView
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20ssp"
+            android:text="* Wardrobes                         * Textures"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+        <TextView
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20ssp"
+            android:text="* Fabric                                 * Upholstery Bed"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+        <TextView
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20ssp"
+            android:layout_marginEnd="10sp"
+            android:text="* Decorative Panels            * Room Partitions"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_18ssp"
+            android:text="* Sofa and Recliners           * Genuine Leather"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20ssp"
+            android:text="* Chairs                                * Blinds-Curtains"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:gravity="center"
+            android:text="Regards,"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Prajit Gajjar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="(Business Head)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CRAFTZONE-SHUBHAM SALES"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="Rajkot-Ahmedabad-Surat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="HardcodedText,TextSizeCheck"
+            />
+    </LinearLayout>
+
+</ScrollView>
+
+

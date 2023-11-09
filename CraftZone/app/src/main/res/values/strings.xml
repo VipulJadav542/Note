@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Craft Zone</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="registration">Registration</string>
+    <string name="user_name">User Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="Register">Register</string>
+    <string name="don_t_have_account">Don\'t have account</string>
+    <string name="click_here">Click Here</string>
+    <string name="already_have_account">Already have account</string>
+    <string name="button">Button</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">Logout</string>
+    <string name="start_app">Start App</string>
+    <string name="log_in">Log In</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="Continue">Continue</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="or">or</string>
+    <string name="continue_with_google">Continue With Google</string>
+    <string name="enter_your_registerd_email">Enter Your Registerd Email</string>
+    <string name="send_email">Send Email</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vipuljadav542_gmail_com">vipuljadav542@gmail.com</string>
+    <string name="descrption">descrption*</string>
+    <string name="sofa">sofa</string>
+    <string name="mattress">Mattress</string>
+    <string name="g_edit_profile">Edit Profile</string>
+    <string name="evolve_texture">Evolve Texture</string>
+    <string name="modular_kitchen">Modular Kitchen</string>
+    <string name="curtain_and_blind">Curtain and Blind</string>
+    <string name="artificial_grass">Artificial Grass</string>
+    <string name="aristo_wardrobe">Aristo Wardrobe</string>
+    <string name="wooden_flooring">Wooden Flooring</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="about_as">About As</string>
+    <string name="best_products">Best Products</string>
+    <string name="todo">TODO</string>
+    <string name="title">title</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="texture">Texture</string>
+    <string name="wardrobe">Wardrobe</string>
+    <string name="room_partition">Room Partition</string>
+    <string name="genuine_leather">Genuine Leather</string>
+    <string name="recliner">Recliner</string>
+    <string name="upholstery_bed">Upholstery Bed</string>
+    <string name="chair">Chair</string>
+    <string name="fabric">Fabric</string>
+    <string name="sofa_cum_bed">Sofa with Bed</string>
+    <string name="curtain_blind">Curtain - Blind</string>
+    <string name="pvc_wooden_flooring"><![CDATA[PVC - Wooden Flooring]]></string>
+    <string name="itemname">Item Name*</string>
+    <string name="details">Details</string>
+    <string name="mattress_the_orthopedic_memory_foam_mattress_adapts_to_the_shape_of_the_sleeper_s_body_providing_uniform_support_throughout_it_distributes_the_weight_of_body_evenly_ensuring_no_blood_clots_or_restlessness">Mattress : The Orthopedic Memory Foam Mattress adapts to the shape of the sleeper\'s body, providing uniform support throughout. It distributes the weight of body evenly, ensuring no blood clots or restlessness.</string>
+    <string name="payment">Payment</string>
+    <string name="price">price*</string>
+    <string name="all_orders">All Orders</string>
+    <string name="track_order">Track Order</string>
+    <string name="billing_and_addressess">Billing and Addresses</string>
+    <string name="languages">Languages</string>
+    <string name="meswada_rajkot_360023">Meswada,Rajkot 360023</string>
+    <string name="settings">settings</string>
+    <string name="personal_details">personal details</string>
+    <string name="orders">Orders</string>
+    <string name="notifications">Notifications\n</string>
+    <string name="region">Regional</string>
+    <string name="language">Language\n</string>
+    <string name="help">Help\n</string>
+    <string name="name">Name</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="_1600">$1600</string>
+    <string name="get_product">get product</string>
+    <string name="no_order_to_show">no order to show</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="gujrati">Gujrati</string>
+    <string name="got_a_quastion_we_re_here_to_answer">Got a quastion? We\'re here to answer!</string>
+    <string name="save">save</string>
+    <string name="address">Address</string>
+    <string name="phone">phone</string>
+    <string name="product">product</string>
+    <string name="premium_chair">Premium chair</string>
+    <string name="_1">1</string>
+    <string name="total">Total</string>
+    <string name="full_name">full name</string>
+    <string name="payment_methods">payment methods</string>
+    <string name="payment_explanation">payment explanation</string>
+    <string name="shipping">shipping</string>
+    <string name="place_order">place order</string>
+    <string name="select_address_error">select address error</string>
+    <string name="address_location_of_home">Address location of home</string>
+    <string name="street">street\n</string>
+    <string name="city">city\n</string>
+    <string name="state">state</string>
+    <string name="delete">delete</string>
+    <string name="see_products">see products</string>
+    <string name="scotch_premium">Scotch Premium</string>
+    <string name="_2000">$2000</string>
+    <string name="show_all">Show All</string>
+    <string name="upload">Upload</string>
+    <string name="goto_payment">go-to Payment</string>
+    <string name="dolar">Price: $</string>
+    <string name="select_profile_image">select profile image</string>
+    <string name="g_cant_change_email_message">can\'t change email</string>
+    <string name="Go_to_Admin">Go to Admin\n</string>
+    <string name="click_here_to_choose_a_image">click_here to choose a Image</string>
+    <string name="special_products">Special Products</string>
+    <string name="recently_updated">Recently Updated</string>
+    <string name="update">update</string>
+    <string name="category">category</string>
+    <string name="title_activity_cart">Cart</string>
+    <string name="title_activity_add_to_cart">AddToCart</string>
+
+    <string name="default_web_client_id" translatable="false">711378555299-fa24u3juvlvhfuu5p0kpcgsfm33g9t5b.apps.googleusercontent.com</string>
+    <string name="please_wait">please wait...</string>
+    <string name="delete_from_cart">Delete From Cart</string>
+    <string name="no_prodect_added">No Prodect Added</string>
+    <string name="delete_product">delete product</string>
+    <string name="exit">Exit</string>
+    <string name="share">Share</string>
+    <string name="feedback">Feedback</string>
+    <string name="message">Message</string>
+    <string name="send_feedback">send feedback</string>
+    <string name="subject">Subject</string>
+    <string name="estd_1986">ESTD - 1986</string>
+    <string name="shubham_sales"><![CDATA[SHUBHAM SALES]]></string>
+    <string name="craftzone">CraftZone</string>
+    <string name="search_products">you can search any category</string>
+    <string name="not_found">Not Found!!!</string>
+    <string name="search1">search</string>
+    <string name="decorative_panels">Decorative Panels</string>
+    <string name="developer_designer">(developer / designer)</string>
+    <string name="vipul_jadav">Vipul Jadav</string>
+    <string name="greetings_i_am_jadav_vipul_the_creative_mind_behind_this_application_with_a_passion_for_both_development_and_design_i_ve_crafted_this_app_with_dedication_and_a_keen_eye_for_detail">Greetings! I am Jadav Vipul, the creative mind behind this application.With a passion for both development and design, I\'ve crafted this app with dedication and a keen eye for detail.</string>
+    <string name="developers_contact">Developers Contact</string>
+    <string name="myusi_dadhaniya">Myusi Dadhaniya</string>
+
+    <string-array name="products">
+        <item>chair</item>
+        <item>curtain blind</item>
+        <item>genuine leather</item>
+        <item>mattress</item>
+        <item>modular kitchen</item>
+        <item>pvc wooden flooring</item>
+        <item>recliner</item>
+        <item>room partition</item>
+        <item>sofa</item>
+        <item>sofa with bed</item>
+        <item>texture</item>
+        <item>curtain blind</item>
+        <item>upholstery bed</item>
+        <item>wardrobe</item>
+        <item>Decorative Panels</item>
+    </string-array>
+</resources>

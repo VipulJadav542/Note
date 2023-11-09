@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_2sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constaintlayout11"
+            android:layout_width="394dp"
+            android:layout_height="721dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/chair"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chairRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/curtain_blind"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/curtain_blindRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/genuine_leather"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/genuine_leatherRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/mattress"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mattressRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/modular_kitchen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/modular_kitchenRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/pvc_wooden_flooring"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pvc_wooden_flooringRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/recliner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reclinerRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/room_partition"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/room_partitionRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/sofa"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sofaRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/sofa_cum_bed"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sofa_cum_bedRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/texture"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textureRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/upholstery_bed"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/upholstery_bedRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/wardrobe"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wardrobeRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/custom_input3"
+                android:padding="@dimen/_6ssp"
+                android:text="@string/decorative_panels"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/decorative_panelsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_40sdp"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

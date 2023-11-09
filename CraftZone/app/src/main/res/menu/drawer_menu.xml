@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/texture"
+        android:title="@string/texture" />
+    <item
+        android:id="@+id/wardrobe"
+        android:title="@string/wardrobe"
+        />
+    <item
+        android:id="@+id/room_partition"
+        android:title="@string/room_partition"
+        />
+    <item
+        android:id="@+id/modular_kitchen"
+        android:title="@string/modular_kitchen"
+        />
+    <item
+        android:id="@+id/genuine_leather"
+        android:title="@string/genuine_leather"
+        />
+    <item
+        android:id="@+id/recliner"
+        android:title="@string/recliner"
+        />
+    <item
+        android:id="@+id/upholstery_bed"
+        android:title="@string/upholstery_bed"/>
+
+    <item
+        android:id="@+id/chair"
+        android:title="@string/chair"
+        />
+    <item
+        android:id="@+id/sofa_with_bed"
+        android:title="@string/sofa_cum_bed"
+        />
+    <item
+        android:id="@+id/mattress"
+        android:title="@string/mattress"
+        />
+    <item
+        android:id="@+id/sofa"
+        android:title="@string/sofa"
+        />
+    <item
+        android:id="@+id/curtain_blind"
+        android:title="@string/curtain_blind"/>
+    <item
+        android:id="@+id/decorative_anels"
+        android:title="@string/decorative_panels"/>
+    <item
+        android:id="@+id/pvc_wooden_flooring"
+        android:title="@string/pvc_wooden_flooring"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="@string/about_as"
+        />
+    <item
+        android:id="@+id/developercontact"
+        android:title="@string/developers_contact"
+        />
+</menu>
