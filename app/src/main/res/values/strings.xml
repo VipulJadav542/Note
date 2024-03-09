@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="default_web_client_id">131408990813-01jj68v92re5af3l4ha2a98h0000uok7.apps.googleusercontent.com</string>
+    <string name="description">Description</string>
+    <string name="note_title">Note Title</string>
+    <string name="save_data">Save Notes</string>
+    <string name="show_data">Show Notes</string>
+    <string name="add_note">Add Note</string>
+    <string name="title">title</string>
+    <string name="click_here">click_here</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">already have account</string>
+    <string name="forgot_password">forgot password</string>
+    <string name="continue_with_google">continue with google</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_account">don\'t have account</string>
+    <string name="exit">Exit</string>
+    <string name="logout">Logout</string>
+    <string name="not_found">not found</string>
+    <string name="add_notes">add notes</string>
+</resources>

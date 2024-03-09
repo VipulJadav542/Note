@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10sp"
+        app:cardCornerRadius="5dp"
+        android:padding="1dp"
+        android:layout_margin="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_note"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="50dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/notetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/note_title"
+                android:inputType="text|textLongMessage|textEnableTextConversionSuggestions|textImeMultiLine|textMultiLine"
+                android:minHeight="48dp"
+                android:autofillHints=""
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/notedescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/description"
+                android:inputType="text|textLongMessage|textEnableTextConversionSuggestions|textImeMultiLine|textMultiLine"
+                android:minHeight="48dp"
+                android:singleLine="false"
+                android:autofillHints=""
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_input"
+                    android:text="@string/save_data"
+                    tools:ignore="ButtonStyle,TextContrastCheck,VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_input"
+                    android:text="@string/show_data"
+                    tools:ignore="ButtonStyle,TextContrastCheck,VisualLintButtonSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

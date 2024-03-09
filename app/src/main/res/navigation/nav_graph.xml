@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/retriveFromRealTime">
+
+    <fragment
+        android:id="@+id/retriveFromRealTime"
+        android:name="com.rk.notes.Fragments.RetriveFromRealTime"
+        android:label="activity_retrive_from_real_time"
+        tools:layout="@layout/activity_retrive_from_real_time" >
+        <action
+            android:id="@+id/action_retriveFromRealTime_to_realTimeDatabase"
+            app:destination="@id/realTimeDatabase" />
+        <action
+            android:id="@+id/action_retriveFromRealTime_to_registration"
+            app:destination="@id/registration" />
+    </fragment>
+    <fragment
+        android:id="@+id/realTimeDatabase"
+        android:name="RealTimeDatabase"
+        android:label="RealTimeDatabase" >
+        <action
+            android:id="@+id/action_realTimeDatabase_to_retriveFromRealTime"
+            app:destination="@id/retriveFromRealTime" />
+    </fragment>
+    <activity
+        android:id="@+id/registration"
+        android:name="com.rk.notes.Registration"
+        android:label="Registration" />
+</navigation>
