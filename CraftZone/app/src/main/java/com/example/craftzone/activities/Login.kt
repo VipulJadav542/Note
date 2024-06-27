@@ -56,6 +56,7 @@ class Login : AppCompatActivity() {
 
             override fun afterTextChanged(p0: Editable?) {}
         })
+
         animation = findViewById(R.id.animation_view)
         //for forgot Password
         val forgotPassword = findViewById<TextView>(R.id.forgotPassword)

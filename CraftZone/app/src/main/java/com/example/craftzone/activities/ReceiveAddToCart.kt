@@ -79,7 +79,6 @@ class ReceiveAddToCart : AppCompatActivity() {
             binding.constraint1.visibility = View.VISIBLE
         }
     }
-
     private fun openCallApp() {
         Intent(Intent.ACTION_DIAL, Uri.parse("tel:9023978985")).also { startActivity(it) }
     }

@@ -40,7 +40,7 @@ class ProfileFragment : Fragment() {
         preferences= activity?.getSharedPreferences("my_pre", Context.MODE_PRIVATE)!!
         val getemail=preferences.getString("email","1")
         val password=preferences.getString("password","123456")
-        if(getemail =="vipuljadav542@gmail.com" && password =="123456")
+        if(getemail =="vipuljadav542@gmail.com" )
         {
             binding.linearAdmin.visibility=View.VISIBLE
         }

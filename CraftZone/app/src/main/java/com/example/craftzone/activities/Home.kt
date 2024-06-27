@@ -120,7 +120,6 @@ class Home : AppCompatActivity() {
             return@setNavigationItemSelectedListener true
         }
     }
-
     private fun replaceFragments(fragment: Fragment) {
         drawer.closeDrawer(GravityCompat.START)
         val fragmentManager = supportFragmentManager

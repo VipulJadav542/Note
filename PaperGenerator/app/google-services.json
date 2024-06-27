@@ -1,0 +1,219 @@
+{
+  "project_info": {
+    "project_number": "996617465879",
+    "firebase_url": "https://tufeelive-new-default-rtdb.firebaseio.com",
+    "project_id": "tufeelive-new",
+    "storage_bucket": "tufeelive-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996617465879:android:4d6781efec35fb9d95ec52",
+        "android_client_info": {
+          "package_name": "com.rk.papergenerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996617465879-i374fqk2v89q2g24u9m8ar5vj2d16das.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rk.papergenerator",
+            "certificate_hash": "edb36e10002c201eadc3a5e978d7dd4c8596049f"
+          }
+        },
+        {
+          "client_id": "996617465879-kl1v3prv83imc31um4ncdohpbip5jl8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm7GUy4my1q0jThsGOVU7RKtjMLdZojQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996617465879-kl1v3prv83imc31um4ncdohpbip5jl8p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996617465879-3rhflpft0d2sntpsvqk6hkhkn0g9erdv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.syst.tufeelive.TufeeMultiplatform"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996617465879:android:031bbb5f38cfc70495ec52",
+        "android_client_info": {
+          "package_name": "com.syst.tufeelive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996617465879-1tsabb3igg9gd5tgp9fddtmpoe5kjo5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syst.tufeelive",
+            "certificate_hash": "b9a5d4d875da4e7115a5c4f521a4db4f5af2c57e"
+          }
+        },
+        {
+          "client_id": "996617465879-k2jc18djusfvkpiul3jf7p79rjoib60h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syst.tufeelive",
+            "certificate_hash": "6db80c53de498963b76d6df4ea58d17b5d6a0197"
+          }
+        },
+        {
+          "client_id": "996617465879-r7p8h78735mu6mjkk6s3bj6p5gambdjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syst.tufeelive",
+            "certificate_hash": "7145a281ef5be259315bf84ee1bbfd654fc05e69"
+          }
+        },
+        {
+          "client_id": "996617465879-u2oci6mhar9teq13lekvfi91sffji3vu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syst.tufeelive",
+            "certificate_hash": "cbe505a84151d2bd3dd07f3863f66ea3c10e2a60"
+          }
+        },
+        {
+          "client_id": "996617465879-kl1v3prv83imc31um4ncdohpbip5jl8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm7GUy4my1q0jThsGOVU7RKtjMLdZojQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996617465879-kl1v3prv83imc31um4ncdohpbip5jl8p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996617465879-3rhflpft0d2sntpsvqk6hkhkn0g9erdv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.syst.tufeelive.TufeeMultiplatform"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996617465879:android:f352b7f8a6eae04b95ec52",
+        "android_client_info": {
+          "package_name": "com.syst.tufeelive.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996617465879-bj58bead152l5kp67eu80nnd9g2tpipe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syst.tufeelive.debug",
+            "certificate_hash": "6db80c53de498963b76d6df4ea58d17b5d6a0197"
+          }
+        },
+        {
+          "client_id": "996617465879-j2cogtufrerj3u6u8l51s6i1ct1b04sv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syst.tufeelive.debug",
+            "certificate_hash": "cbe505a84151d2bd3dd07f3863f66ea3c10e2a60"
+          }
+        },
+        {
+          "client_id": "996617465879-kl1v3prv83imc31um4ncdohpbip5jl8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm7GUy4my1q0jThsGOVU7RKtjMLdZojQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996617465879-kl1v3prv83imc31um4ncdohpbip5jl8p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996617465879-3rhflpft0d2sntpsvqk6hkhkn0g9erdv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.syst.tufeelive.TufeeMultiplatform"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996617465879:android:e62318d360aa54df95ec52",
+        "android_client_info": {
+          "package_name": "school.management.tufeestudent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996617465879-10jr3r41v7bgrsmrkgeoibguecd7jad0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.management.tufeestudent",
+            "certificate_hash": "6db80c53de498963b76d6df4ea58d17b5d6a0197"
+          }
+        },
+        {
+          "client_id": "996617465879-kl1v3prv83imc31um4ncdohpbip5jl8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm7GUy4my1q0jThsGOVU7RKtjMLdZojQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996617465879-kl1v3prv83imc31um4ncdohpbip5jl8p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996617465879-3rhflpft0d2sntpsvqk6hkhkn0g9erdv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.syst.tufeelive.TufeeMultiplatform"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
