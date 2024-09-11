@@ -1,4 +1,4 @@
-package com.rk.notes.Fragments
+package com.rk.notes.fragments
 
 import android.content.ContentValues.TAG
 import android.os.Bundle
@@ -10,14 +10,15 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.rk.notes.Adapter.RealTimeDataFetchAdapter
-import com.rk.notes.DataModel.RealTimeData
+import com.rk.notes.adapter.RealTimeDataFetchAdapter
+import com.rk.notes.dataModel.RealTimeData
 import com.rk.notes.R
 import com.rk.notes.databinding.ActivityRetriveFromRealTimeBinding
 import com.rk.notes.databinding.UpdateNoteBinding
@@ -29,7 +30,8 @@ class RetriveFromRealTime : Fragment(), RealTimeDataFetchAdapter.OnItemClickList
     private lateinit var binding: ActivityRetriveFromRealTimeBinding
     private lateinit var databaseReference: DatabaseReference
     private lateinit var auth: FirebaseAuth
-    private lateinit var recyclerView: androidx.recyclerview.widget.RecyclerView
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: RealTimeDataFetchAdapter // Declare adapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,20 +39,35 @@ class RetriveFromRealTime : Fragment(), RealTimeDataFetchAdapter.OnItemClickList
         savedInstanceState: Bundle?
     ): View {
         binding = ActivityRetriveFromRealTimeBinding.inflate(inflater, container, false)
-        val view = binding.root
+        return binding.root
+    }
 
-        binding.fab.setOnClickListener {
-            findNavController().navigate(R.id.action_retriveFromRealTime_to_realTimeDatabase)
-        }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        init()
+        getData()
+        navigateToAddNote()
+    }
 
+    private fun init() {
         databaseReference = FirebaseDatabase.getInstance().reference
         auth = FirebaseAuth.getInstance()
-
         recyclerView = binding.recyclerView3
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        val dataList = mutableListOf<RealTimeData>()
+        // Initialize adapter with an empty list and set it to RecyclerView
+        adapter = RealTimeDataFetchAdapter(mutableListOf(), this)
+        recyclerView.adapter = adapter
+    }
 
+    private fun navigateToAddNote() {
+        binding.fab.setOnClickListener {
+            findNavController().navigate(R.id.action_retriveFromRealTime_to_realTimeDatabase)
+        }
+    }
+
+    private fun getData() {
+        val dataList = mutableListOf<RealTimeData>()
         val databaseReference = FirebaseDatabase.getInstance().getReference("Notes")
         databaseReference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -59,44 +76,41 @@ class RetriveFromRealTime : Fragment(), RealTimeDataFetchAdapter.OnItemClickList
                     val title = noteSnapshot.child("title").getValue(String::class.java)
                     val description = noteSnapshot.child("description").getValue(String::class.java)
                     val email = noteSnapshot.child("email").getValue(String::class.java)
-                    val date_time = noteSnapshot.child("date_time").getValue(String::class.java)
+                    val dateTime = noteSnapshot.child("dateTime").getValue(String::class.java)
 
                     val noteId = noteSnapshot.key
                     if (email == auth.currentUser?.email.toString()) {
-                        if (title != null && description != null && date_time != null) {
+                        if (title != null && description != null && dateTime != null) {
                             val data = RealTimeData(
                                 noteId.toString(),
                                 title,
                                 description,
                                 email,
-                                date_time
+                                dateTime
                             )
                             dataList.add(data)
                         }
                     }
                 }
-                val adapter = RealTimeDataFetchAdapter(
-                    dataList,
-                    this@RetriveFromRealTime
-                )
-                if(dataList.isEmpty())
-                {
-                    binding.animationView.visibility=View.VISIBLE
-                    binding.textView5.visibility=View.VISIBLE
+                adapter.updateNote(dataList)
+                Log.d("data", dataList.toString())
+                if (dataList.isEmpty()) {
+                    binding.animationView.visibility = View.VISIBLE
+                    binding.textView5.visibility = View.VISIBLE
+                } else {
+                    binding.animationView.visibility = View.GONE
+                    binding.textView5.visibility = View.GONE
                 }
-                recyclerView.adapter = adapter
             }
 
             override fun onCancelled(error: DatabaseError) {
                 Log.e(TAG, "Failed to read data from Firebase.", error.toException())
             }
         })
-
-        return view
     }
 
-    override fun OnDeleteClick(Id: String) {
-        val databaseReference = FirebaseDatabase.getInstance().getReference("Notes").child(Id)
+    override fun onDeleteClick(id: String) {
+        val databaseReference = FirebaseDatabase.getInstance().getReference("Notes").child(id)
         databaseReference.removeValue().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 Log.d(TAG, "Record deleted successfully")
@@ -106,32 +120,26 @@ class RetriveFromRealTime : Fragment(), RealTimeDataFetchAdapter.OnItemClickList
         }
     }
 
-    override fun OnUpdateClick(
-        Id: String,
-        title: String,
-        description: String,
-        email: String,
-        date: String
-    ) {
+    override fun onUpdateClick(data: RealTimeData) {
         val dialogBinding = UpdateNoteBinding.inflate(layoutInflater)
         val dialog = AlertDialog.Builder(requireContext()).setView(dialogBinding.root)
             .setTitle("Update Note")
             .setPositiveButton("Update") { dialog, _ ->
                 val newtitle = dialogBinding.updateTitle.text.toString()
                 val newdescription = dialogBinding.updateDescription.text.toString()
-                UpdateNote(Id, newtitle, newdescription, email, getCurrentDateTime())
+                updateNote(data.noteId, newtitle, newdescription, data.email, getCurrentDateTime())
                 dialog.dismiss()
             }
             .setNegativeButton("Cancel") { dialog, _ ->
                 dialog.dismiss()
             }
             .create()
-        dialogBinding.updateTitle.setText(title)
-        dialogBinding.updateDescription.setText(description)
+        dialogBinding.updateTitle.setText(data.title)
+        dialogBinding.updateDescription.setText(data.description)
         dialog.show()
     }
 
-    private fun UpdateNote(
+    private fun updateNote(
         id: String,
         newtitle: String,
         newdescription: String,

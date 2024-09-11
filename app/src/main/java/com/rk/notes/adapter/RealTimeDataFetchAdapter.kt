@@ -1,26 +1,26 @@
-package com.rk.notes.Adapter
+package com.rk.notes.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AlphaAnimation
 import androidx.recyclerview.widget.RecyclerView
-import com.rk.notes.DataModel.RealTimeData
+import com.rk.notes.dataModel.RealTimeData
 import com.rk.notes.databinding.RetrievDataBinding
 
 class RealTimeDataFetchAdapter(
-    private var datalistItem: MutableList<RealTimeData>,
+    private var dataListItem: MutableList<RealTimeData>,
     private val itemClickListener: OnItemClickListener
 ) : RecyclerView.Adapter<RealTimeDataFetchAdapter.MyViewHolder>() {
     interface OnItemClickListener {
-        fun OnDeleteClick(Id: String)
-        fun OnUpdateClick(Id: String, title: String, description: String,email: String,date: String)
+        fun onDeleteClick(id: String)
+        fun onUpdateClick(data: RealTimeData)
     }
 
     inner class MyViewHolder(val binding: RetrievDataBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-    }
-    fun anim(view: View) {
+        RecyclerView.ViewHolder(binding.root)
+
+    private fun anim(view: View) {
         val animation = AlphaAnimation(0.0f, 1.0f)
         animation.duration = 1500
         view.startAnimation(animation)
@@ -32,21 +32,29 @@ class RealTimeDataFetchAdapter(
     }
 
     override fun getItemCount(): Int {
-        return datalistItem.size
+        return dataListItem.size
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         anim(holder.itemView)
-        val note = datalistItem[position]
+        val note = dataListItem[position]
         holder.binding.title.text = note.title
         holder.binding.description.text = note.description
-        holder.binding.date.text=note.date_time
+        holder.binding.date.text = note.dateTime
         holder.binding.Update.setOnClickListener {
-            itemClickListener.OnUpdateClick(note.noteId, note.title, note.description,note.email,note.date_time)
+            itemClickListener.onUpdateClick(
+                note
+            )
         }
         holder.binding.Delete.setOnClickListener {
-            itemClickListener.OnDeleteClick(note.noteId)
+            itemClickListener.onDeleteClick(note.noteId)
         }
 
+    }
+
+    fun updateNote(dataList: MutableList<RealTimeData>) {
+        dataListItem.clear()
+        dataListItem.addAll(dataList)
+        notifyDataSetChanged()  //
     }
 }

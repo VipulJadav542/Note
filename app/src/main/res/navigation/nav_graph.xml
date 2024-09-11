@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/retriveFromRealTime"
-        android:name="com.rk.notes.Fragments.RetriveFromRealTime"
+        android:name="com.rk.notes.fragments.RetriveFromRealTime"
         android:label="activity_retrive_from_real_time"
         tools:layout="@layout/activity_retrive_from_real_time" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/realTimeDatabase"
-        android:name="RealTimeDatabase"
+        android:name="com.rk.notes.fragments.RealTimeDatabase"
         android:label="RealTimeDatabase" >
         <action
             android:id="@+id/action_realTimeDatabase_to_retriveFromRealTime"

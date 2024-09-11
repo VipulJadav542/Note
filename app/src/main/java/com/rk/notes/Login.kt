@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +16,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.rk.notes.databinding.ActivityLoginBinding
 
-class Login : AppCompatActivity() {
+class Login : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityLoginBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
@@ -24,49 +25,30 @@ class Login : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        init()
+        addOnClickListener()
+    }
+
+    private fun addOnClickListener() {
+        binding.click.setOnClickListener(this)
+        binding.login.setOnClickListener(this)
+        binding.google1.setOnClickListener(this)
+    }
+
+    private fun init() {
         supportActionBar?.hide()
         auth = FirebaseAuth.getInstance()
+        initGoogleSignInClient()
+    }
 
-        binding.click.setOnClickListener {
-            startActivity(Intent(this, Registration::class.java))
-            FirebaseAuth.getInstance().signOut()
-        }
+    private fun initGoogleSignInClient() {
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build()
         googleSignInClient = GoogleSignIn.getClient(this, gso)
-
-        binding.google1.setOnClickListener {
-            val signInClient = googleSignInClient.signInIntent
-            launcher.launch(signInClient)
-        }
-        binding.login.setOnClickListener {
-            if (binding.edFirstName.text.isEmpty() && binding.pwd.text.isEmpty()) {
-                Toast.makeText(this, "null", Toast.LENGTH_SHORT).show()
-            } else {
-                val email1 = binding.edFirstName.text.trim { it <= ' ' }.toString()
-                val password1 = binding.pwd.text.trim { it <= ' ' }.toString()
-                auth.signInWithEmailAndPassword(email1, password1)
-                    .addOnCompleteListener(this) { task ->
-                        if (task.isSuccessful) {
-                            savetosharedPreferences()
-//                            val sharedpref = getSharedPreferences("my_pre", Context.MODE_PRIVATE)
-//                            val editor = sharedpref.edit()
-//                            editor.putString("email",email1)
-//                            editor.putString("password",password1)
-//                            editor.apply()
-                            startActivity(Intent(this, Home::class.java))
-                            Toast.makeText(this, "login successfully", Toast.LENGTH_SHORT).show()
-                            finish()
-                        } else {
-                            Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show()
-                        }
-                    }
-            }
-        }
     }
+
     private val launcher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult())
-        { result ->
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
                 val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
                 if (task.isSuccessful) {
@@ -88,12 +70,48 @@ class Login : AppCompatActivity() {
                 Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
             }
         }
-    private fun savetosharedPreferences()
-    {
+
+    private fun savetosharedPreferences() {
         val sharedpref = getSharedPreferences("my_pre", Context.MODE_PRIVATE)
         val editor = sharedpref.edit()
-        editor.putString("email",binding.edFirstName.text.toString())
-        editor.putString("password",binding.pwd.text.toString())
+        editor.putString("email", binding.edFirstName.text.toString())
+        editor.putString("password", binding.pwd.text.toString())
         editor.apply()
+    }
+
+    override fun onClick(p0: View?) {
+        when (p0?.id) {
+
+            R.id.click -> {
+                startActivity(Intent(this, Registration::class.java))
+                FirebaseAuth.getInstance().signOut()
+            }
+
+            R.id.login -> {
+                if (binding.edFirstName.text.isEmpty() && binding.pwd.text.isEmpty()) {
+                    Toast.makeText(this, "null", Toast.LENGTH_SHORT).show()
+                } else {
+                    val email1 = binding.edFirstName.text.trim { it <= ' ' }.toString()
+                    val password1 = binding.pwd.text.trim { it <= ' ' }.toString()
+                    auth.signInWithEmailAndPassword(email1, password1)
+                        .addOnCompleteListener(this) { task ->
+                            if (task.isSuccessful) {
+                                savetosharedPreferences()
+                                startActivity(Intent(this, Home::class.java))
+                                Toast.makeText(this, "login successfully", Toast.LENGTH_SHORT)
+                                    .show()
+                                finish()
+                            } else {
+                                Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                }
+            }
+
+            R.id.google1 -> {
+                val signInClient = googleSignInClient.signInIntent
+                launcher.launch(signInClient)
+            }
+        }
     }
 }
