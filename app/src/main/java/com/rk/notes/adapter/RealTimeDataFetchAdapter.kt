@@ -1,5 +1,6 @@
 package com.rk.notes.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -52,6 +53,7 @@ class RealTimeDataFetchAdapter(
 
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateNote(dataList: MutableList<RealTimeData>) {
         dataListItem.clear()
         dataListItem.addAll(dataList)
