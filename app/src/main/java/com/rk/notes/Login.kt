@@ -15,6 +15,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.rk.notes.databinding.ActivityLoginBinding
+import com.rk.notes.utils.Const.EMAIL
+import com.rk.notes.utils.Const.MY_PRE
+import com.rk.notes.utils.Const.PASSWORD
 
 class Login : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityLoginBinding
@@ -59,23 +62,29 @@ class Login : AppCompatActivity(), View.OnClickListener {
                             savetosharedPreferences()
                             val intent = Intent(this, Home::class.java)
                             startActivity(intent)
-                            Toast.makeText(this, "login successful", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(
+                                this,
+                                getString(R.string.login_successful), Toast.LENGTH_SHORT
+                            ).show()
                             finish()
                         } else {
-                            Toast.makeText(this, "login Failed", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(
+                                this,
+                                getString(R.string.login_failed), Toast.LENGTH_SHORT
+                            ).show()
                         }
                     }
                 }
             } else {
-                Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.failed_), Toast.LENGTH_SHORT).show()
             }
         }
 
     private fun savetosharedPreferences() {
-        val sharedpref = getSharedPreferences("my_pre", Context.MODE_PRIVATE)
+        val sharedpref = getSharedPreferences(MY_PRE, Context.MODE_PRIVATE)
         val editor = sharedpref.edit()
-        editor.putString("email", binding.edFirstName.text.toString())
-        editor.putString("password", binding.pwd.text.toString())
+        editor.putString(EMAIL, binding.edFirstName.text.toString())
+        editor.putString(PASSWORD, binding.pwd.text.toString())
         editor.apply()
     }
 
@@ -98,11 +107,17 @@ class Login : AppCompatActivity(), View.OnClickListener {
                             if (task.isSuccessful) {
                                 savetosharedPreferences()
                                 startActivity(Intent(this, Home::class.java))
-                                Toast.makeText(this, "login successfully", Toast.LENGTH_SHORT)
+                                Toast.makeText(
+                                    this,
+                                    getString(R.string.login_successfully), Toast.LENGTH_SHORT
+                                )
                                     .show()
                                 finish()
                             } else {
-                                Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(
+                                    this,
+                                    getString(R.string.failed__), Toast.LENGTH_SHORT
+                                ).show()
                             }
                         }
                 }

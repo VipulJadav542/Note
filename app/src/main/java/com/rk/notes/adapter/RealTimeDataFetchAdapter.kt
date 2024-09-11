@@ -57,6 +57,6 @@ class RealTimeDataFetchAdapter(
     fun updateNote(dataList: MutableList<RealTimeData>) {
         dataListItem.clear()
         dataListItem.addAll(dataList)
-        notifyDataSetChanged()  //
+        notifyDataSetChanged()
     }
 }

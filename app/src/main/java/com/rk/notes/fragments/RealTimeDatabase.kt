@@ -13,6 +13,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.rk.notes.R
 import com.rk.notes.dataModel.RealTimeData
 import com.rk.notes.databinding.ActivityRealTimeDatabaseBinding
+import com.rk.notes.utils.Const.NOTES
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -55,7 +56,7 @@ class RealTimeDatabase : Fragment(), View.OnClickListener {
             val title = binding.notetitle.text.toString()
             val description = binding.notedescription.text.toString()
 
-            val key = FirebaseDatabase.getInstance().getReference("Notes").key
+            val key = FirebaseDatabase.getInstance().getReference(NOTES).key
             val noteItem = RealTimeData(
                 key.toString(),
                 title,
@@ -64,7 +65,7 @@ class RealTimeDatabase : Fragment(), View.OnClickListener {
                 getCurrentDateTime()
             )
 
-            databaseReference.child("Notes").push().setValue(noteItem)
+            databaseReference.child(NOTES).push().setValue(noteItem)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         findNavController().navigate(R.id.action_realTimeDatabase_to_retriveFromRealTime)
@@ -72,23 +73,24 @@ class RealTimeDatabase : Fragment(), View.OnClickListener {
                         binding.notedescription.text.clear()
                         Toast.makeText(
                             requireContext(),
-                            "Added Successfully",
+                            getString(R.string.added_successfully),
                             Toast.LENGTH_SHORT
                         )
                             .show()
                     } else {
-                        Toast.makeText(requireContext(), "Failed!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(requireContext(),
+                            getString(R.string.failed), Toast.LENGTH_SHORT).show()
                     }
                 }
         } else {
-            binding.notetitle.error = "enter note title"
-            binding.notedescription.error = "enter note description"
+            binding.notetitle.error = getString(R.string.enter_note_title)
+            binding.notedescription.error = getString(R.string.enter_note_description)
         }
     }
 
     private fun getCurrentDateTime(): String {
         val currentDate = Date()
-        val dateFormat = SimpleDateFormat("MMM dd, yyyy - hh:mm a", Locale.getDefault())
+        val dateFormat = SimpleDateFormat(getString(R.string.mmm_dd_yyyy_hh_mm_a_), Locale.getDefault())
         return dateFormat.format(currentDate)
     }
 

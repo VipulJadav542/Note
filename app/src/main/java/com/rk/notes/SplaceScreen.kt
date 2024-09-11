@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.rk.notes.utils.Const.EMAIL
+import com.rk.notes.utils.Const.MY_PRE
 
 class SplaceScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,8 +16,8 @@ class SplaceScreen : AppCompatActivity() {
 
         supportActionBar?.hide()
         Handler(Looper.getMainLooper()).postDelayed({
-            val sharedpref = getSharedPreferences("my_pre", Context.MODE_PRIVATE)
-            val email1 = sharedpref.getString("email", null)
+            val sharedpref = getSharedPreferences(MY_PRE, Context.MODE_PRIVATE)
+            val email1 = sharedpref.getString(EMAIL, null)
             if (email1 != null) {
                 val intent = Intent(this, Home::class.java)
                 startActivity(intent)

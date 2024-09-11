@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.google.firebase.auth.FirebaseAuth
+import com.rk.notes.utils.Const.MY_PRE
 
 @Suppress("DEPRECATION")
 class Home : AppCompatActivity() {
@@ -67,7 +68,7 @@ class Home : AppCompatActivity() {
     }
 
     private fun clearSharedPreferences(context: Context) {
-        val sharedPreferences = context.getSharedPreferences("my_pre", Context.MODE_PRIVATE)
+        val sharedPreferences = context.getSharedPreferences(MY_PRE, Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         editor.clear()
         editor.apply()

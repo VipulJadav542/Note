@@ -20,4 +20,24 @@
     <string name="logout">Logout</string>
     <string name="not_found">not found</string>
     <string name="add_notes">add notes</string>
+    <string name="failed_to_read_data_from_firebase">Failed to read data from Firebase.</string>
+    <string name="record_deleted_successfully">Record deleted successfully</string>
+    <string name="failed_to_delete_record">Failed to delete record</string>
+    <string name="record_updated_successfully">Record Updated successfully</string>
+    <string name="failed_to_updated_record">Failed to Updated record</string>
+    <string name="mmm_dd_yyyy_hh_mm_a">MMM dd, yyyy - hh:mm a</string>
+    <string name="added_successfully">Added Successfully</string>
+    <string name="enter_note_title">enter note title</string>
+    <string name="enter_note_description">enter note description</string>
+    <string name="mmm_dd_yyyy_hh_mm_a_">MMM dd, yyyy - hh:mm a</string>
+    <string name="failed">Failed!</string>
+    <string name="login_successful">login successful</string>
+    <string name="login_failed">login Failed</string>
+    <string name="failed_">Failed</string>
+    <string name="login_successfully">login successfully</string>
+    <string name="failed__">failed</string>
+    <string name="success">success</string>
+    <string name="update_note">Update Note</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
 </resources>

@@ -48,10 +48,15 @@ class Registration : AppCompatActivity(), View.OnClickListener {
                         .addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
                                 startActivity(Intent(this, Login::class.java))
-                                Toast.makeText(this, "success", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(
+                                    this,
+                                    getString(R.string.success),
+                                    Toast.LENGTH_SHORT
+                                ).show()
                                 finish()
                             } else {
-                                Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this, getString(R.string.failed), Toast.LENGTH_SHORT)
+                                    .show()
                             }
                         }
                 }
